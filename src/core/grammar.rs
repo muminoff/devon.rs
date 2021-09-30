@@ -1,3 +1,8 @@
+trait WordProcessor {
+    fn segmentize(word: Word) -> Vec<char>;
+    fn lemmatize(word: Word) -> Vec<char>;
+}
+
 pub struct Word {
     pub text: &'static str,
     pub vowels: Vec<char>,
